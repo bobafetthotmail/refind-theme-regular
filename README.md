@@ -1,8 +1,8 @@
 # Super rEFInd
 
-A simplistic clean and minimal theme for rEFInd.
+A simplistic clean and minimal theme for rEFInd, ready to go for mac.
 
-![Example][example-image]
+![screenshot][screenshot]
 
 ### Usage
 
@@ -28,7 +28,7 @@ A simplistic clean and minimal theme for rEFInd.
 The background is [Minimalist Wallpaper][wallpaper] by
 [LeonardoAIanB][wallpaper-author].
 
-[example-image]: https://i.imgur.com/wQQ5OiQ.png
+[screenshot]: /screenshot.jpg
 [refind-website]: https://www.rodsbooks.com/refind/
 [refind-theme-original]: https://github.com/munlik/refind-theme-regular
 [refind-theme-regular]: https://github.com/bobafetthotmail/refind-theme-regular
