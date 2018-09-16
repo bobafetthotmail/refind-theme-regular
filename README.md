@@ -6,19 +6,21 @@ A simplistic clean and minimal theme for rEFInd, ready to go for mac.
 
 ### Usage
 
-1.  Locate your refind EFI directory. This is commonly `/boot/EFI/refind`
-    though it will depend on where you mount your ESP and where rEFInd is
-    installed. `fdisk -l` and `mount` may help.
+1. Mount your EFI directory:
 
-2.  Create a folder called `themes` inside it, if it doesn't already exist
+   - `sudo mkdir /Volumes/efi`
+   - `sudo mount -t msdos /dev/disk0s1 /Volumes/efi`
+   - `open /Volumes/efi/`
 
-3.  Clone this repository into the `themes` directory.
+2. Locate refind and create a folder called `themes` inside it.
 
-4.  To enable the theme add `include themes/super-refind/theme.conf` at the end of `refind/refind.conf`.
+3. Clone this repository into the `themes` directory.
+
+4. To enable the theme add `include themes/super-refind/theme.conf` at the end of `refind/refind.conf`.
 
 **More information**
 
-[rEFInd][refind-website] The official rEFInd website
+The official [rEFInd website][refind-website].
 
 ### Attribution
 
