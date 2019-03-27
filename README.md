@@ -5,10 +5,17 @@ A simplistic clean and minimal theme for rEFInd
 NOTE: this is a fork of munlik's theme since he seems to have abandoned his project, he didn't answer to (my) PRs on github for years.
 
 ![Screenshot 01](http://i.imgur.com/wQQ5OiQ.png)
-**press F10 to take screenshot
+**press F10 to take screenshot**
 
+### Installation [Easy]:
 
-### Installation:
+1. Just paste this command in your terminal.
+   ```
+   bash <(curl -s https://raw.githubusercontent.com/bobafetthotmail/refind-theme-regular/master/Install.sh)
+   ```
+2. Well, that's it! xD
+
+### Installation [Hard]:
 
 1. Clone git repository to your $HOME directory.
    ```
