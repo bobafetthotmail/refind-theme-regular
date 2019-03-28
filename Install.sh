@@ -38,7 +38,7 @@ echo "Copying Theme to /boot/efi/EFI/refind/ [DONE]"
 echo "Removing unused directories [DONE]"
 echo "Removing old themes [DONE]"
 echo "Updating theme.config [NOT DONE]"
-echo "include refind-theme-regular/theme.conf" > /boot/efi/EFI/refind/refind.conf
+echo "include refind-theme-regular/theme.conf" >> /boot/efi/EFI/refind/refind.conf
 sleep 1
 clear
 echo "Downloading Refind Theme to "$HOME" [DONE]"
