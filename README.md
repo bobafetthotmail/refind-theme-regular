@@ -7,7 +7,7 @@ NOTE: this is a fork of munlik's theme since he seems to have abandoned his proj
 ![Screenshot 01](http://i.imgur.com/wQQ5OiQ.png)
 **press F10 to take screenshot**
 
-### Installation [Easy]:
+### Installation [Quick]:
 
 1. Just paste this command in your terminal.
    ```
@@ -15,7 +15,7 @@ NOTE: this is a fork of munlik's theme since he seems to have abandoned his proj
    ```
 2. Well, that's it! xD
 
-### Installation [Hard]:
+### Installation [Manual]:
 
 1. Clone git repository to your $HOME directory.
    ```
