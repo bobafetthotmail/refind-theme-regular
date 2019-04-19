@@ -13,11 +13,11 @@ NOTE: this is a fork of munlik's theme since he seems to have abandoned his proj
 
 ### Installation [Quick]:
 
-1. Just paste this command in your terminal.
+1. Just paste this command in your terminal and enter your choices.
    ```
    sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/diddypod/refind-theme-regular/master/install.sh)"
    ```
-2. To adjust icon size, font size, background color and selector color edit `theme.conf`.
+2. To further adjust icon size, font size, background color and selector color edit `theme.conf`.
 
    ```
    sudo nano /boot/efi/EFI/refind/refind-theme-regular/theme.conf
@@ -40,9 +40,12 @@ NOTE: this is a fork of munlik's theme since he seems to have abandoned his proj
    ```
    sudo cp -r refind-theme-regular /boot/efi/EFI/refind/
    ```
-3. Remove unused directory.
+3. Remove unused directories and files.
    ```
    sudo rm -rf /boot/efi/EFI/refind/refind-theme-regular/{src,.git}
+   ```
+   ```
+   sudo rm /boot/efi/EFI/refind/refind-theme-regular/install.sh
    ```
 
 4. To adjust icon size, font size, background color and selector color edit `theme.conf`.
@@ -50,14 +53,17 @@ NOTE: this is a fork of munlik's theme since he seems to have abandoned his proj
    sudo nano /boot/efi/EFI/refind/refind-theme-regular/theme.conf
    ```
 
-5. To enable the theme add `include refind-theme-regular/theme.conf` at the end of `refind.conf`.
+5. To enable the theme add `include refind-theme-regular/theme.conf` at the end of `refind.conf`, and comment out or delete any other themes you might have installed.
    ```
    sudo nano /boot/efi/EFI/refind/refind.conf
+
    ```
+
+**NOTE**: If your not geting your full resolution or have color issues then try disabling the CSM in your UEFI settings.
 
 ### Contribute new icons:
 
-0. fork this repository on github and then git clone your fork of this repository in your Linux system
+0. Fork this repository on github and then git clone your fork of this repository in your Linux system
 
 1. The icons must be in svg format to allow easy generation of icons at any scale, canvas size must have width and height 128 px for OS icons, or 48 px for tool icons. The actual icon in the svg file should roughly fit in a square with a side of 96 px or 20 px (for OS and tool icons, respectively). Inkscape is a good program to create and work with svg files.
 
@@ -67,9 +73,9 @@ NOTE: this is a fork of munlik's theme since he seems to have abandoned his proj
 
 4. cd in the ./src directory and run the script ./render_bitmap.sh that will process the svg files and generate the png files at various sizes.
 
-5. copy the png icons you generated from their /src/bitmap subfolder into the appropriate /icons subfolders for their size by running ./copy-bitmap.sh
+5. Copy the png icons you generated from their /src/bitmap subfolder into the appropriate /icons subfolders for their size by running ./copy-bitmap.sh
 
-6. commit your changes, upload to your fork and then open a PR.
+6. Commit your changes, upload to your fork and then open a PR.
 
 **More information**
 
