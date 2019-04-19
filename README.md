@@ -30,7 +30,15 @@ NOTE: this is a fork of munlik's theme since he seems to have abandoned his proj
    git clone https://github.com/bobafetthotmail/refind-theme-regular.git
    ```
 
-2. Locate refind directory under EFI partition. For most Linux based system is commonly `/boot/efi/EFI/refind/`. Copy theme directory to it.
+2. Remove unused directories and files.
+   ```
+   sudo rm -rf refind-theme-regular/{src,.git}
+   ```
+   ```
+   sudo rm refind-theme-regular/install.sh
+   ```
+
+3. Locate refind directory under EFI partition. For most Linux based system is commonly `/boot/efi/EFI/refind/`. Copy theme directory to it.
 
    **Important:** Delete older installed versions of this theme before you proceed any further.
 
@@ -39,13 +47,6 @@ NOTE: this is a fork of munlik's theme since he seems to have abandoned his proj
    ```
    ```
    sudo cp -r refind-theme-regular /boot/efi/EFI/refind/
-   ```
-3. Remove unused directories and files.
-   ```
-   sudo rm -rf /boot/efi/EFI/refind/refind-theme-regular/{src,.git}
-   ```
-   ```
-   sudo rm /boot/efi/EFI/refind/refind-theme-regular/install.sh
    ```
 
 4. To adjust icon size, font size, background color and selector color edit `theme.conf`.
