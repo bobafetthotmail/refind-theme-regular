@@ -7,11 +7,8 @@
 
 clear
 
-#Store current working directory for later clean-up
-present_dir=$PWD
-
 #Clone the theme
-echo -n "Downloading rEFInd theme Regular to $present_dir"
+echo -n "Downloading rEFInd theme Regular to $PWD"
 git clone https://github.com/diddypod/refind-theme-regular.git &> /dev/null
 echo " - [DONE]"
 
@@ -28,18 +25,8 @@ then
 fi
 if test "${location: -1}" != "/"
 then
-    location="$location{/}"
+    location="$location/"
 fi
-
-#Remove previous installs
-echo -n "Deleting older installed versions (if any)"
-rm -rf "$location"{regular-theme,refind-theme-regular}
-echo " - [DONE]"
-
-#Copy theme setup folders
-echo -n "Copying Theme to $location"
-cp -r refind-theme-regular "$location"
-echo " - [DONE]"
 
 #Set icon size
 echo "Pick an icon size: (larger icons look better on bigger and denser displays)"
@@ -103,7 +90,7 @@ echo "Selected theme - $theme_name"
 
 #Uncomment relevant lines from src/theme.conf
 echo -n "Generating theme file theme.conf"
-cd "$location"refind-theme-regular
+cd refind-theme-regular
 cp src/theme.conf theme.conf
 sed -i "s/#icons_dir refind-theme-regular\/icons\/$size_big-$size_small/icons_dir refind-theme-regular\/icons\/$size_big-$size_small/" theme.conf
 sed -i "s/#big_icon_size $size_big/big_icon_size $size_big/" theme.conf
@@ -111,11 +98,23 @@ sed -i "s/#small_icon_size $size_small/small_icon_size $size_small/" theme.conf
 sed -i "s/#banner refind-theme-regular\/icons\/$size_big-$size_small\/bg$theme_path.png/banner refind-theme-regular\/icons\/$size_big-$size_small\/bg$theme_path.png/" theme.conf
 sed -i "s/#selection_big refind-theme-regular\/icons\/$size_big-$size_small\/selection$theme_path-big.png/selection_big refind-theme-regular\/icons\/$size_big-$size_small\/selection$theme_path-big.png/" theme.conf
 sed -i "s/#selection_small refind-theme-regular\/icons\/$size_big-$size_small\/selection$theme_path-small.png/selection_small refind-theme-regular\/icons\/$size_big-$size_small\/selection$theme_path-small.png/" theme.conf
+cd ..
 echo " - [DONE]"
 
 #Clean up
 echo -n "Removing unused directories"
-rm -rf "$location"refind-theme-regular/{src,.git}
+rm -rf refind-theme-regular/{src,.git}
+rm -rf refind-theme-regular/install.sh
+echo " - [DONE]"
+
+#Remove previous installs
+echo -n "Deleting older installed versions (if any)"
+rm -rf "$location"{regular-theme,refind-theme-regular}
+echo " - [DONE]"
+
+#Copy theme setup folders
+echo -n "Copying theme to $location"
+cp -r refind-theme-regular "$location"
 echo " - [DONE]"
 
 #Edit refind.conf - remove older themes
@@ -139,7 +138,6 @@ fi
 case "$del_confirm" in
     y|Y)
         echo -n "Deleting download"
-        cd "$present_dir"
         rm -r refind-theme-regular
         echo " - [DONE]"
         break
