@@ -32,10 +32,10 @@ NOTE: this is a fork of munlik's theme since he seems to have abandoned his proj
 
 2. Remove unused directories and files.
    ```
-   sudo rm -rf refind-theme-regular/{src,.git}
+   rm -rf refind-theme-regular/{src,.git}
    ```
    ```
-   sudo rm refind-theme-regular/install.sh
+   rm refind-theme-regular/install.sh
    ```
 
 3. Locate refind directory under EFI partition. For most Linux based system is commonly `/boot/efi/EFI/refind/`. Copy theme directory to it.
@@ -46,18 +46,17 @@ NOTE: this is a fork of munlik's theme since he seems to have abandoned his proj
    sudo rm -rf /boot/efi/EFI/refind/{regular-theme,refind-theme-regular}
    ```
    ```
-   sudo cp -r refind-theme-regular /boot/efi/EFI/refind/
+   sudo cp -r refind-theme-regular /boot/efi/EFI/refind/themes/
    ```
 
 4. To adjust icon size, font size, background color and selector color edit `theme.conf`.
    ```
-   sudo nano /boot/efi/EFI/refind/refind-theme-regular/theme.conf
+   sudoedit /boot/efi/EFI/refind/themes/refind-theme-regular/theme.conf
    ```
 
-5. To enable the theme add `include refind-theme-regular/theme.conf` at the end of `refind.conf`, and comment out or delete any other themes you might have installed.
+5. To enable the theme add `include themes/refind-theme-regular/theme.conf` at the end of `refind.conf`, and comment out or delete any other themes you might have installed.
    ```
-   sudo nano /boot/efi/EFI/refind/refind.conf
-
+   sudoedit /boot/efi/EFI/refind/refind.conf
    ```
 
 **NOTE**: If your not geting your full resolution or have color issues then try disabling the CSM in your UEFI settings.
