@@ -51,12 +51,12 @@ NOTE: this is a fork of munlik's theme since he seems to have abandoned his proj
 
 4. To adjust icon size, font size, background color and selector color edit `theme.conf`.
    ```
-   sudoedit /boot/efi/EFI/refind/themes/refind-theme-regular/theme.conf
+   sudo vi /boot/efi/EFI/refind/themes/refind-theme-regular/theme.conf
    ```
 
 5. To enable the theme add `include themes/refind-theme-regular/theme.conf` at the end of `refind.conf`, and comment out or delete any other themes you might have installed.
    ```
-   sudoedit /boot/efi/EFI/refind/refind.conf
+   sudo vi /boot/efi/EFI/refind/refind.conf
    ```
 
 **NOTE**: If your not geting your full resolution or have color issues then try disabling the CSM in your UEFI settings.
