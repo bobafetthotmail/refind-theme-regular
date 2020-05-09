@@ -166,4 +166,4 @@ case "$del_confirm" in
 esac
 
 echo "Thank you for installing rEFInd theme Regular."
-echo "NOTE: If your not geting your full resolution or have color issues then try disabling the CSM in your UEFI settings."
+echo "NOTE: If you're not geting your full resolution or have color issues then try disabling the CSM in your UEFI settings."
