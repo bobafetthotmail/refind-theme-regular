@@ -118,7 +118,7 @@ echo " - [DONE]"
 echo -n "Removing old themes from refind.conf"
 echo
 echo
-read -p "Do you have a secondary config file to preserved? (${bold}Y${normal}/n): " config_confirm
+read -p "Do you have a secondary config file to preserve? (${bold}Y${normal}/n): " config_confirm
 if test -z "$config_confirm";
 then
     config_confirm="y"
@@ -127,7 +127,7 @@ case "$config_confirm" in
     y|Y)
         read -p "Enter the name of the config file to be preserved in full eg: manual.conf: " configname
         # Checking for enter key. If so it has the same effect having no files to preserve.
-        if [[ $configname == "" ]]; then 
+        if [[ $configname == "" ]]; then
 	configname='^#'
 	fi
         #Excludes line with entered config file then ^\s*include matches lines starting with any nuber of spaces and then include.
@@ -136,7 +136,7 @@ case "$config_confirm" in
     n)
         # ^\s*include matches lines starting with any nuber of spaces and then include.
         sed --in-place=".bak" 's/^\s*include/# (disabled) include/' "$location"refind.conf
-        ;;    
+        ;;
     *)
         ;;
 esac
@@ -166,4 +166,4 @@ case "$del_confirm" in
 esac
 
 echo "Thank you for installing rEFInd theme Regular."
-echo "NOTE: If you're not geting your full resolution or have color issues then try disabling the CSM in your UEFI settings."
+echo "NOTE: If you're not getting your full resolution or have color issues then try disabling the CSM in your UEFI settings."
