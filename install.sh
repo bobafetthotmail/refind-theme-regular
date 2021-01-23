@@ -7,6 +7,14 @@
 
 clear
 
+#Check if git is installed
+if ! command -v git &> /dev/null
+then
+    echo "git not found, please install it."
+    echo "On ubuntu it can be done with 'sudo apt install git'"
+    exit 1
+fi
+
 #Clone the theme
 echo -n "Downloading rEFInd theme Regular to $PWD"
 git clone https://github.com/bobafetthotmail/refind-theme-regular.git &> /dev/null
