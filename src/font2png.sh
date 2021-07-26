@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #
 # Apply from mkfont.sh (by Roderick W. Smith)
 # 
@@ -139,4 +139,4 @@ $CONVERT -size ${WIDTH}x${HEIGHT} xc:transparent \
 -font $FONT_NAME \
 -pointsize $FONT_SIZE \
 -draw "text 0,$Y_POS ' !\"#\$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_\`abcdefghijklmnopqrstuvwxyz{|}~?'" \
-$OUTPUT_PNG       
+$OUTPUT_PNG

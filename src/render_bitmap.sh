@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #
 
 INKSCAPE=`which inkscape 2> /dev/null`

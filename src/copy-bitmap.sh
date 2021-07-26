@@ -11,7 +11,7 @@ for i in $icons_folders ; do
     big_size="$(echo $i | awk -F"-" '{print $1}')"
     small_size="$(echo $i | awk -F"-" '{print $2}')"
 
-    cp -auv "./src/bitmap/big_$big_size/." "./icons/$i"
-    cp -auv "./src/bitmap/small_$small_size/." "./icons/$i"
+    cp -av "./src/bitmap/big_$big_size/." "./icons/$i"
+    cp -av "./src/bitmap/small_$small_size/." "./icons/$i"
 
 done
