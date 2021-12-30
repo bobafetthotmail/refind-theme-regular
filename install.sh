@@ -23,13 +23,16 @@ echo " - [DONE]"
 #Useful formatting tags
 bold=$(tput bold)
 normal=$(tput sgr0)
-
+refind_dir="/boot/efi/EFI/refind"
 #Set install path
 echo "Enter rEFInd install location"
 read -e -p "Default - ${bold}/boot/efi/EFI/refind/${normal}: " location
 if test -z "$location";
 then
-    location="/boot/efi/EFI/refind/"
+    location="/boot/efi/EFI/refind/themes"
+fi
+if [[ -d "${location}" ]]; then
+	mkdir -p "${location}"
 fi
 if test "${location: -1}" != "/"
 then
@@ -139,11 +142,11 @@ case "$config_confirm" in
 	configname='^#'
 	fi
         #Excludes line with entered config file then ^\s*include matches lines starting with any nuber of spaces and then include.
-        sed --in-place=".bak" "/$configname/! s/^\s*include/# (disabled) include/" "$location"refind.conf
+        sed --in-place=".bak" "/$configname/! s/^\s*include/# (disabled) include/" "${refind_dir}"/refind.conf
         ;;
     n|N)
         # ^\s*include matches lines starting with any nuber of spaces and then include.
-        sed --in-place=".bak" 's/^\s*include/# (disabled) include/' "$location"refind.conf
+        sed --in-place=".bak" 's/^\s*include/# (disabled) include/' "${refind_dir}"/refind.conf
         ;;
     *)
         ;;
@@ -154,7 +157,7 @@ echo " - [DONE]"
 echo -n "Updating refind.conf"
 echo "
 # Load rEFInd theme Regular
-include refind-theme-regular/theme.conf" | tee -a "$location"refind.conf &> /dev/null
+include refind-theme-regular/theme.conf" | tee -a "${refind_dir}"/refind.conf &> /dev/null
 echo " - [DONE]"
 
 #Clean up - remove download
