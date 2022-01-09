@@ -99,12 +99,13 @@ echo
 #Uncomment relevant lines from src/theme.conf
 echo -n "Generating theme file theme.conf"
 cd refind-theme-regular
-sed -i "s/#icons_dir refind-theme-regular\/icons\/$size_big-$size_small/icons_dir refind-theme-regular\/icons\/$size_big-$size_small/" theme.conf
+cp src/theme.conf theme.conf
+sed -i "s/#icons_dir themes\/refind-theme-regular\/icons\/$size_big-$size_small/icons_dir themes\/refind-theme-regular\/icons\/$size_big-$size_small/" theme.conf
 sed -i "s/#big_icon_size $size_big/big_icon_size $size_big/" theme.conf
 sed -i "s/#small_icon_size $size_small/small_icon_size $size_small/" theme.conf
-sed -i "s/#banner refind-theme-regular\/icons\/$size_big-$size_small\/bg$theme_path.png/banner refind-theme-regular\/icons\/$size_big-$size_small\/bg$theme_path.png/" theme.conf
-sed -i "s/#selection_big refind-theme-regular\/icons\/$size_big-$size_small\/selection$theme_path-big.png/selection_big refind-theme-regular\/icons\/$size_big-$size_small\/selection$theme_path-big.png/" theme.conf
-sed -i "s/#selection_small refind-theme-regular\/icons\/$size_big-$size_small\/selection$theme_path-small.png/selection_small refind-theme-regular\/icons\/$size_big-$size_small\/selection$theme_path-small.png/" theme.conf
+sed -i "s/#banner themes\/refind-theme-regular\/icons\/$size_big-$size_small\/bg$theme_path.png/banner themes\/refind-theme-regular\/icons\/$size_big-$size_small\/bg$theme_path.png/" theme.conf
+sed -i "s/#selection_big themes\/refind-theme-regular\/icons\/$size_big-$size_small\/selection$theme_path-big.png/selection_big themes\/refind-theme-regular\/icons\/$size_big-$size_small\/selection$theme_path-big.png/" theme.conf
+sed -i "s/#selection_small themes\/refind-theme-regular\/icons\/$size_big-$size_small\/selection$theme_path-small.png/selection_small themes\/refind-theme-regular\/icons\/$size_big-$size_small\/selection$theme_path-small.png/" theme.conf
 cd ..
 echo " - [DONE]"
 
