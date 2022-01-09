@@ -99,7 +99,6 @@ echo
 #Uncomment relevant lines from src/theme.conf
 echo -n "Generating theme file theme.conf"
 cd refind-theme-regular
-cp src/theme.conf theme.conf
 sed -i "s/#icons_dir refind-theme-regular\/icons\/$size_big-$size_small/icons_dir refind-theme-regular\/icons\/$size_big-$size_small/" theme.conf
 sed -i "s/#big_icon_size $size_big/big_icon_size $size_big/" theme.conf
 sed -i "s/#small_icon_size $size_small/small_icon_size $size_small/" theme.conf
@@ -157,7 +156,7 @@ echo " - [DONE]"
 echo -n "Updating refind.conf"
 echo "
 # Load rEFInd theme Regular
-include refind-theme-regular/theme.conf" | tee -a "${refind_dir}"/refind.conf &> /dev/null
+include themes/refind-theme-regular/theme.conf" | tee -a "${refind_dir}"/refind.conf &> /dev/null
 echo " - [DONE]"
 
 #Clean up - remove download
