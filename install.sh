@@ -26,17 +26,15 @@ normal=$(tput sgr0)
 refind_dir="/boot/efi/EFI/refind"
 #Set install path
 echo "Enter rEFInd install location"
-read -e -p "Default - ${bold}/boot/efi/EFI/refind/${normal}: " location
-if test -z "$location";
-then
-    location="/boot/efi/EFI/refind/themes"
+read -e -p "Default - ${bold}${refind_dir}${normal}: " refind_dir
+if [[ ! -d "${refind_dir}" ]]; then
+    echo "Specified rEFInd install location does not exist. Aborting install."
+    exit 1
 fi
-if [[ -d "${location}" ]]; then
-	mkdir -p "${location}"
-fi
-if test "${location: -1}" != "/"
+if test "${refind_dir: -1}" == "/"
 then
-    location="$location/"
+    # remove trailing slash
+    refind_dir=$(realpath -s "$refind_dir")
 fi
 
 #Set icon size
@@ -117,12 +115,14 @@ echo " - [DONE]"
 
 #Remove previous installs
 echo -n "Deleting older installed versions (if any)"
-rm -rf "$location"{regular-theme,refind-theme-regular}
+rm -rf "${refind_dir}"/{regular-theme,refind-theme-regular}
+rm -rf "${refind_dir}"/themes/{regular-theme,refind-theme-regular}
 echo " - [DONE]"
 
 #Copy theme setup folders
-echo -n "Copying theme to $location"
-cp -r refind-theme-regular "$location"
+echo -n "Copying theme to ${refind_dir}/themes"
+mkdir -p "${refind_dir}/themes"
+cp -r refind-theme-regular "${refind_dir}/themes"
 echo " - [DONE]"
 
 #Edit refind.conf - remove older themes
