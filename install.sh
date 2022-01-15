@@ -16,7 +16,9 @@ then
 fi
 
 #Clone the theme
-echo -n "Downloading rEFInd theme Regular to $PWD"
+theme_source_directory=$(mktemp -d -t refind-theme-regular-XXXXXX)
+cd "${theme_source_directory}"
+echo -n "Downloading rEFInd theme Regular to ${theme_source_directory}"
 git clone https://github.com/bobafetthotmail/refind-theme-regular.git &> /dev/null
 echo " - [DONE]"
 
@@ -168,8 +170,8 @@ then
 fi
 case "$del_confirm" in
     y|Y)
-        echo -n "Deleting download"
-        rm -r refind-theme-regular
+        echo -n "Deleting download folder ${theme_source_directory}"
+        rm -r "${theme_source_directory}"
         echo " - [DONE]"
         ;;
     *)
