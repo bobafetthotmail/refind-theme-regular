@@ -33,11 +33,8 @@ if [[ ! -d "${refind_dir}" ]]; then
     echo "Specified rEFInd install location does not exist. Aborting install."
     exit 1
 fi
-if test "${refind_dir: -1}" == "/"
-then
-    # remove trailing slash
-    refind_dir=$(realpath -s "$refind_dir")
-fi
+# remove trailing slash
+refind_dir=$(realpath -s "$refind_dir")
 
 #Set icon size
 echo "Pick an icon size: (larger icons look better on bigger and denser displays)"
