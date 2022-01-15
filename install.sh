@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+set -euo pipefail
 # An installer for refind-theme-regular by Munlik
 
 #Check if root
