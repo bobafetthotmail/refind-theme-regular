@@ -25,7 +25,7 @@ echo " - [DONE]"
 #Useful formatting tags
 bold=$(tput bold)
 normal=$(tput sgr0)
-refind_dir="/boot/efi/EFI/refind"
+refind_dir="${1:-/boot/efi/EFI/refind}"
 #Set install path
 echo "Enter rEFInd install location"
 read -e -p "Default - ${bold}${refind_dir}${normal}: " refind_dir
