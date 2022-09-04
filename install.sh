@@ -25,10 +25,13 @@ echo " - [DONE]"
 #Useful formatting tags
 bold=$(tput bold)
 normal=$(tput sgr0)
-refind_dir="/boot/efi/EFI/refind"
+refind_dir_default="/boot/efi/EFI/refind"
 #Set install path
 echo "Enter rEFInd install location"
-read -e -p "Default - ${bold}${refind_dir}${normal}: " refind_dir
+read -e -p "Default - ${bold}${refind_dir_default}${normal}: " refind_dir
+if test -z "$refind_dir"; then
+refind_dir="${refind_dir_default}" # If empty string passed above, set to default
+fi
 if [[ ! -d "${refind_dir}" ]]; then
     echo "Specified rEFInd install location does not exist. Aborting install."
     exit 1
