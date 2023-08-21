@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1"
+	 id="svg2" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" inkscape:export-xdpi="90" inkscape:export-ydpi="90" inkscape:version="0.91 r13725" sodipodi:docname="tool_rescue.svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48" x="0px" y="0px" viewBox="0 0 48 48"
+	 style="enable-background:new 0 0 48 48;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{display:inline;fill:#808C99;}
+	.st2{fill:#808C99;}
+</style>
+<sodipodi:namedview  bordercolor="#666666" borderopacity="1.0" id="base" inkscape:current-layer="layer3" inkscape:cx="-11.47235" inkscape:cy="24.378383" inkscape:document-units="px" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:window-height="713" inkscape:window-maximized="1" inkscape:window-width="1366" inkscape:window-x="0" inkscape:window-y="27" inkscape:zoom="8.5448272" pagecolor="#ffffff" showgrid="true" units="px">
+	<inkscape:grid  id="grid4146" type="xygrid"></inkscape:grid>
+</sodipodi:namedview>
+<g id="layer3" inkscape:groupmode="layer" inkscape:label="Layer 2" class="st0">
+	<path id="path4135" inkscape:connector-curvature="0" class="st1" d="M13.2,24c0-6.1,4.9-11,11-11s11,4.9,11,11s-4.9,11-11,11
+		c-2.9,0-5.7-1.2-7.8-3.2l2.8-2.8c1.3,1.3,3.1,2.1,4.9,2.1c3.9,0,7-3.1,7-7s-3.1-7-7-7s-7,3.1-7,7H13.2z"/>
+	
+		<path id="path4161" inkscape:flatsided="true" inkscape:randomized="0" inkscape:rounded="0" inkscape:transform-center-y="1.25" sodipodi:arg1="0" sodipodi:arg2="1.0471976" sodipodi:cx="26.5" sodipodi:cy="15" sodipodi:r1="5" sodipodi:r2="2.5" sodipodi:sides="3" sodipodi:type="star" class="st1" d="
+		M15.2,31.5l4.3-7.5h-8.7L15.2,31.5z"/>
+	<path id="rect4169" class="st1" d="M23.7,19h1c0.3,0,0.5,0.2,0.5,0.5v5c0,0.3-0.2,0.5-0.5,0.5h-1c-0.3,0-0.5-0.2-0.5-0.5v-5
+		C23.2,19.2,23.4,19,23.7,19z"/>
+	<path id="rect4171" class="st1" d="M23.7,23h3c0.3,0,0.5,0.2,0.5,0.5v1c0,0.3-0.2,0.5-0.5,0.5h-3c-0.3,0-0.5-0.2-0.5-0.5v-1
+		C23.2,23.2,23.4,23,23.7,23z"/>
+</g>
+<path class="st2" d="M34.5,16.8H18c-0.3,0-0.5-0.2-0.5-0.5v-2.9c0-0.3,0.2-0.5,0.5-0.5h16.5c0.3,0,0.5,0.2,0.5,0.5v2.9
+	C35,16.6,34.8,16.8,34.5,16.8z"/>
+<g>
+	<g>
+		<path class="st2" d="M11.3,17.4v-0.9h1.4v0.9H11.3z M11.4,13.3v-1l1.3-0.5v1L11.4,13.3z M12.7,17.4v-5.5h1v5.5H12.7z M13.6,17.4
+			v-0.9h1.3v0.9H13.6z"/>
+	</g>
+</g>
+<path class="st2" d="M34.5,35.4H18c-0.3,0-0.5-0.2-0.5-0.5V32c0-0.3,0.2-0.5,0.5-0.5h16.5c0.3,0,0.5,0.2,0.5,0.5v2.9
+	C35,35.2,34.8,35.4,34.5,35.4z"/>
+<g>
+	<g>
+		<path class="st2" d="M12.2,34l-0.1-0.9c0.4,0,0.7-0.1,0.9-0.2c0.2-0.1,0.4-0.2,0.5-0.3s0.2-0.3,0.2-0.4c0-0.1,0-0.3-0.1-0.3
+			c-0.1-0.1-0.2-0.1-0.4-0.1c-0.2,0-0.4,0-0.7,0.1c-0.2,0.1-0.5,0.2-0.7,0.4l-0.5-0.8c0.2-0.2,0.5-0.4,0.9-0.5
+			c0.3-0.1,0.7-0.2,1.1-0.2c0.5,0,0.9,0.1,1.2,0.3s0.4,0.5,0.4,0.9c0,0.3-0.1,0.7-0.4,0.9c-0.2,0.3-0.5,0.4-0.9,0.5v0.4L12.2,34z
+			 M12.8,36.5c-0.3,0-0.6,0-0.8-0.1c-0.2,0-0.5-0.1-0.7-0.1l0.1-1c0.2,0,0.4,0.1,0.6,0.1c0.2,0,0.5,0.1,0.8,0.1
+			c0.3,0,0.6-0.1,0.8-0.2c0.2-0.1,0.3-0.3,0.3-0.5c0-0.2-0.1-0.3-0.2-0.4c-0.1-0.1-0.3-0.2-0.5-0.3S12.7,34,12.4,34h-0.1l-0.1-0.9
+			l1.1,0.4c0.5,0,0.9,0.1,1.2,0.4s0.5,0.6,0.5,1c0,0.5-0.2,0.9-0.6,1.2S13.4,36.5,12.8,36.5z"/>
+	</g>
+</g>
+<path class="st2" d="M34.5,26.1H18c-0.3,0-0.5-0.2-0.5-0.5v-2.9c0-0.3,0.2-0.5,0.5-0.5h16.5c0.3,0,0.5,0.2,0.5,0.5v2.9
+	C35,25.9,34.8,26.1,34.5,26.1z"/>
+<g>
+	<g>
+		<path class="st2" d="M11.3,27.1V26c0.8-0.4,1.4-0.9,1.8-1.4c0.4-0.5,0.6-1,0.6-1.5c0-0.3-0.1-0.4-0.2-0.6s-0.3-0.2-0.6-0.2
+			c-0.2,0-0.5,0.1-0.7,0.2s-0.4,0.3-0.6,0.5L11,22.4c0.2-0.3,0.5-0.5,0.8-0.7s0.7-0.3,1.1-0.3c0.6,0,1.1,0.1,1.4,0.4
+			s0.5,0.7,0.5,1.3c0,0.5-0.2,1-0.5,1.5c-0.3,0.5-0.8,0.9-1.4,1.4v1.1H11.3z M11.5,27.1v-0.9H15v0.9H11.5z"/>
+	</g>
+</g>
+</svg>
