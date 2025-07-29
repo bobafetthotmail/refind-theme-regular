@@ -75,7 +75,7 @@ NOTE: this is a fork of [munlik's theme](https://github.com/munlik/refind-theme-
 
 3. Copy the svg file in `/src/svg/big` or `/src/svg/small` (depending on what is more appropriate) and rename them to be consistent with others.
 
-4. Install inkskape and optipng in your linux system as they will be needed to process the icons by the next step.
+4. Install inkscape and optipng in your linux system as they will be needed to process the icons by the next step.
 
 5. `cd` in the `./src` directory and run the script `./render_bitmap.sh`, which will process the svg files and generate the png files at various sizes.
 
