@@ -31,7 +31,7 @@ NOTE: this is a fork of [munlik's theme](https://github.com/munlik/refind-theme-
 
 2. Remove unused directories and files.
    ```
-   sudo rm -rf refind-theme-regular/{src,.git}
+   sudo rm -rf refind-theme-regular/{src,.git,.gitignore,.devcontainer}
    ```
    ```
    sudo rm refind-theme-regular/install.sh
