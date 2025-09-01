@@ -6,20 +6,29 @@ set -euo pipefail
 #   default   -> install
 #   --test    -> install (dry run, no changes)
 #   --uninstall -> remove theme and restore backup
+#   --refresh / --reinstall -> uninstall then install fresh
 
 #------------------------------
 # Mode handling
 #------------------------------
 TEST_MODE=false
 UNINSTALL_MODE=false
+REFRESH_MODE=false
 
-if [[ "${1:-}" == "--test" ]]; then
-    TEST_MODE=true
-    echo "🧪 Running in TEST MODE: No changes will be made."
-elif [[ "${1:-}" == "--uninstall" ]]; then
-    UNINSTALL_MODE=true
-    echo "🗑️  Running in UNINSTALL MODE."
-fi
+case "${1:-}" in
+    --test)
+        TEST_MODE=true
+        echo "🧪 Running in TEST MODE: No changes will be made."
+        ;;
+    --uninstall)
+        UNINSTALL_MODE=true
+        echo "🗑️  Running in UNINSTALL MODE."
+        ;;
+    --refresh|--reinstall)
+        REFRESH_MODE=true
+        echo "🔄 Running in REFRESH mode: will uninstall then reinstall."
+        ;;
+esac
 
 #------------------------------
 # Helpers
@@ -74,6 +83,16 @@ linux() {
     fi
     echo "✅ Linux checks passed."
 }
+
+#------------------------------
+# REFRESH mode logic
+#------------------------------
+if $REFRESH_MODE; then
+    echo "⚠️  REFRESH mode selected. First uninstalling..."
+    "$0" --uninstall
+    echo "✅ Uninstall finished. Proceeding with install..."
+    exec "$0" "${TEST_MODE:+--test}"  # restart script in normal (or test) mode
+fi
 
 #------------------------------
 # Ask user which OS to run as
