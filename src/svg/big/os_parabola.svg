@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    viewBox="0 0 2047.9999 2047.9999"
    height="128"
    width="128"
    version="1.1"
    id="svg-parabola_officialIcon_default"
    sodipodi:docname="os_parabola.svg"
-   inkscape:version="0.92.1 r15371">
+   inkscape:version="1.4.2 (unknown)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
      id="defs8" />
   <sodipodi:namedview
@@ -25,17 +25,20 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1280"
-     inkscape:window-height="852"
+     inkscape:window-width="1719"
+     inkscape:window-height="1404"
      id="namedview6"
      showgrid="false"
-     inkscape:zoom="1.84375"
-     inkscape:cx="-2.9830508"
-     inkscape:cy="64"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg-parabola_officialIcon_default" />
+     inkscape:zoom="9.0078125"
+     inkscape:cx="64"
+     inkscape:cy="67.274935"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg-parabola_officialIcon_default"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="true"
+     inkscape:deskcolor="#d1d1d1" />
   <title
      id="title-parabola_officialIcon_default">Parabola Official Icon (Default Color)</title>
   <metadata
@@ -63,9 +66,15 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
+  <circle
+     style="fill:#ffffff;stroke-width:71.7184"
+     id="path1"
+     cx="1023.9999"
+     cy="1023.9999"
+     r="767.99994" />
   <path
      id="path-parabola_officialIcon_default"
-     d="m 1484.2823,375.82472 c -39.6113,3.78448 -81.6679,10.74156 -125.5366,20.01997 l -277.924,285.22476 c 31.8564,3.83288 61.0103,10.15907 87.6167,19.07796 z m 195.7246,16.01598 -384.6185,394.51056 c 108.17,140.18042 70.0667,421.76674 -157.5686,885.82394 168.4156,-183.8432 903.4347,-1097.44624 567.1531,-1269.73554 -7.8075,-4.00054 -16.3452,-7.44105 -24.966,-10.59896 z m -512.5105,55.58492 c -53.2054,16.93033 -107.3612,36.12496 -161.3372,56.52606 L 822.21115,692.61043 c 42.19504,-6.84041 82.20326,-11.439 119.88416,-13.89602 z M 891.69216,548.93763 C 556.10046,686.97908 256,855.59625 256,855.59625 434.27464,788.78667 595.2802,738.84174 735.77204,708.86234 Z"
-     style="fill:#787dab;stroke-width:0.75000006"
+     d="m 1383.5955,517.61306 c -30.9463,2.95663 -63.803,8.39184 -98.0755,15.64061 L 1068.3919,756.0855 c 24.8879,2.99445 47.6643,7.93678 68.4506,14.90467 z m 152.9099,12.51248 -300.4832,308.21139 c 84.5077,109.51596 54.7396,329.50527 -123.1004,692.04987 131.5745,-143.6275 705.8083,-857.3798 443.0883,-991.98082 -6.0996,-3.12541 -12.7697,-5.81332 -19.5047,-8.28044 z m -400.3989,43.42574 c -41.5667,13.22681 -83.8759,28.22262 -126.0447,44.16098 L 866.35243,765.1019 c 32.96488,-5.34407 64.22129,-8.93672 93.6595,-10.85627 z M 920.63447,652.85752 C 658.45345,760.7024 423.99997,892.43457 423.99997,892.43457 563.27703,840.23959 689.06263,801.2201 798.82187,777.7987 Z"
+     style="fill:#787dab;stroke-width:0.585938"
      inkscape:connector-curvature="0" />
 </svg>
